@@ -6,13 +6,13 @@ import gui.view.PracticePanel;
 
 public class GUIController 
 {
-	private Gnome gerome;
+	private Gnome theGnome;
 	private PracticeFrame appFrame;
 	
 	public GUIController()
 	
 	{
-		gerome = new Gnome();
+		theGnome = new Gnome();
 		
 		appFrame = new PracticeFrame(this);
 	}

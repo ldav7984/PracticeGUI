@@ -9,7 +9,7 @@ public class PracticeFrame extends JFrame
 	private GUIController appController;
 	private PracticePanel appPanel;
 	
-	public PracticeFrame(GUIController appController)
+	public PracticeFrame(GUIController appController) //constructor
 	{
 		super();
 		
@@ -23,7 +23,7 @@ public class PracticeFrame extends JFrame
 	{
 		this.setContentPane(appPanel);
 		
-		this.setSize(800,  900);
+		this.setSize(800, 900);
 		this.setTitle("Practice GUI");
 		this.setResizable(true);
 		this.setVisible(true);

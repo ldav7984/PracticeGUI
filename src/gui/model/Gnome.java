@@ -9,6 +9,11 @@ public class Gnome
 		this.name = "Gerome the Gnome";
 	}
 	
+	public Gnome(String name)
+	{
+		this.name = name;
+	}
+	
 	
 	public String getName()
 	{
