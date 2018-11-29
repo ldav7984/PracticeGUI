@@ -15,7 +15,7 @@ public class PracticePanel extends JPanel
 	
 	public PracticePanel(GUIController appController)
 	{
-		super();
+		super(); 
 		
 		this.appController = appController;
 		
