@@ -5,6 +5,7 @@ import gui.controller.GUIController;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.Font;
 
 public class PracticePanel extends JPanel
 {
@@ -27,8 +28,6 @@ public class PracticePanel extends JPanel
 		redButton = new JButton("Painting Roses Red");
 		appLayout = new SpringLayout();
 		
-		
-		
 		setupPanel();
 		setupLayout();
 		setupListeners();
@@ -43,7 +42,13 @@ public class PracticePanel extends JPanel
 	}
 	private void changeBackgroundRed()
 	{
-		this.setBackground(new Color(80, 20, 35));
+		int red = (int) (Math.random() * 256);
+		if(red <= 80)
+		{
+			red = red + 80;
+		}
+		this.setBackground(new Color(red, 20, 35));
+		//this.setBackground(new Color(red, 0, 0));
 	}
 	
 	private void setupPanel() //installs components to the panel
